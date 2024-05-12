@@ -28,7 +28,7 @@ jobs:
         run: ./scripts/buildprod.sh
 
       - name: Migrate the db
-        run: goose up
+        run: ./scripts/migrateup.sh
 
       - id: auth
         uses: google-github-actions/auth@v2
